@@ -1,18 +1,20 @@
-# ML-ETL-Project
-This repository contains code for an end-to-end Machine Learning and ETL (Extract, Transform, Load) project developed on Databricks, showcasing data processing, model training, and deployment using Flask.
+# Scalable Healthcare Data Platform: ETL + ML Pipeline
 
-About Dataset
-Context
-This synthetic healthcare dataset has been created to serve as a valuable resource for data science, machine learning, and data analysis enthusiasts. It is designed to mimic real-world healthcare data, enabling users to practice, develop, and showcase their data manipulation and analysis skills in the context of the healthcare industry.
+End-to-end data platform processing structured healthcare datasets for predictive analytics.
 
-Inspiration
-The inspiration behind this dataset is rooted in the need for practical and diverse healthcare data for educational and research purposes. Healthcare data is often sensitive and subject to privacy regulations, making it challenging to access for learning and experimentation. To address this gap, I have leveraged Python's Faker library to generate a dataset that mirrors the structure and attributes commonly found in healthcare records. By providing this synthetic data, I hope to foster innovation, learning, and knowledge sharing in the healthcare analytics domain.
+## Architecture
+Databricks Lakehouse → PySpark ETL → ML Model Training → Java REST API
 
-Contact Information
-For inquiries or collaborations, please contact:
+## What I Built
+- **PySpark ETL Pipeline**: Ingested + transformed synthetic healthcare data on Databricks
+- **ML Pipeline**: Feature engineering with Pandas/NumPy + model training workflows  
+- **Backend Integration**: Designed for deployment as Java Spring Boot microservice on Azure AKS
+- **MLOps Ready**: Structured for MLflow tracking + CI/CD integration
 
-Email: mdraya3@gmail.com
-GitHub: [ML-ETL-Project on GitHub](https://github.com/mollanegash/ML-ETL-Project/
+## Tech Stack
+PySpark, Databricks, Python, Pandas, PostgreSQL, Java, Spring Boot, Azure AKS, Kubernetes
 
+## Production Notes
+Designed with backend scalability and production integration in mind. Originally prototyped with Flask, migrated architecture to Spring Boot + AKS for enterprise deployment.
 
-
+**Scale**: TB-scale ready | **Status**: Platform architecture complete
